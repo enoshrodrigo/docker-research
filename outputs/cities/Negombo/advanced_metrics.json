@@ -1,0 +1,144 @@
+{
+  "skill_scores": {
+    "mse_skill_score": 0.9752076519827005,
+    "by_forecast_day": [
+      {
+        "forecast_day": 1,
+        "skill_score": 0.9822964224893249
+      },
+      {
+        "forecast_day": 2,
+        "skill_score": 0.9793619165533802
+      },
+      {
+        "forecast_day": 3,
+        "skill_score": 0.9768775975717678
+      },
+      {
+        "forecast_day": 4,
+        "skill_score": 0.9730315544823315
+      },
+      {
+        "forecast_day": 5,
+        "skill_score": 0.9644299200741022
+      }
+    ]
+  },
+  "event_detection": {
+    "thresholds": {
+      "light": 0.1,
+      "moderate": 5.0,
+      "heavy": 10.0,
+      "extreme": 20.0
+    },
+    "categories": {
+      "light": {
+        "true_positive": 5688,
+        "false_positive": 351,
+        "false_negative": 22,
+        "true_negative": 74,
+        "precision": 0.9418777943368107,
+        "recall": 0.9961471103327496,
+        "hit_rate": 0.9961471103327496,
+        "false_alarm_rate": 0.8258823529411765,
+        "f1_score": 0.9682526172440208,
+        "accuracy": 0.93920130399348,
+        "critical_success_index": 0.9384590001649893
+      },
+      "moderate": {
+        "true_positive": 2735,
+        "false_positive": 253,
+        "false_negative": 134,
+        "true_negative": 3013,
+        "precision": 0.9153279785809906,
+        "recall": 0.9532938306029975,
+        "hit_rate": 0.9532938306029975,
+        "false_alarm_rate": 0.07746478873239436,
+        "f1_score": 0.9339252176882362,
+        "accuracy": 0.936919315403423,
+        "critical_success_index": 0.8760409993593851
+      },
+      "heavy": {
+        "true_positive": 1572,
+        "false_positive": 122,
+        "false_negative": 16,
+        "true_negative": 4425,
+        "precision": 0.9279811097992916,
+        "recall": 0.9899244332493703,
+        "hit_rate": 0.9899244332493703,
+        "false_alarm_rate": 0.02683087750164944,
+        "f1_score": 0.9579524680073126,
+        "accuracy": 0.9775061124694376,
+        "critical_success_index": 0.9192982456140351
+      },
+      "extreme": {
+        "true_positive": 613,
+        "false_positive": 31,
+        "false_negative": 14,
+        "true_negative": 5477,
+        "precision": 0.9518633540372671,
+        "recall": 0.9776714513556619,
+        "hit_rate": 0.9776714513556619,
+        "false_alarm_rate": 0.005628177196804648,
+        "f1_score": 0.964594807238395,
+        "accuracy": 0.9926650366748166,
+        "critical_success_index": 0.9316109422492401
+      }
+    }
+  },
+  "extreme_events": {
+    "count": 627,
+    "correctly_predicted": 613,
+    "hit_rate": 0.9776714513556619,
+    "by_forecast_day": [
+      {
+        "forecast_day": 1,
+        "extreme_count": 126,
+        "correctly_predicted": 125,
+        "hit_rate": 0.9920634920634921,
+        "nash_sutcliffe": 0.9822964223399365
+      },
+      {
+        "forecast_day": 2,
+        "extreme_count": 126,
+        "correctly_predicted": 122,
+        "hit_rate": 0.9682539682539683,
+        "nash_sutcliffe": 0.9793619166299192
+      },
+      {
+        "forecast_day": 3,
+        "extreme_count": 125,
+        "correctly_predicted": 123,
+        "hit_rate": 0.984,
+        "nash_sutcliffe": 0.9768775978372537
+      },
+      {
+        "forecast_day": 4,
+        "extreme_count": 125,
+        "correctly_predicted": 123,
+        "hit_rate": 0.984,
+        "nash_sutcliffe": 0.9730315533055209
+      },
+      {
+        "forecast_day": 5,
+        "extreme_count": 125,
+        "correctly_predicted": 120,
+        "hit_rate": 0.96,
+        "nash_sutcliffe": 0.9644299204186952
+      }
+    ],
+    "southwest_monsoon": {
+      "extreme_count": 59,
+      "correctly_predicted": 58,
+      "hit_rate": 0.9830508474576272
+    },
+    "northeast_monsoon": {
+      "extreme_count": 15,
+      "correctly_predicted": 15,
+      "hit_rate": 1.0
+    }
+  },
+  "efficiency_metrics": {
+    "nash_sutcliffe": 0.9752076519827005
+  }
+}

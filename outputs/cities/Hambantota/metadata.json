@@ -1,0 +1,31 @@
+{
+  "feature_cols": [
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "temperature_2m_mean",
+    "apparent_temperature_max",
+    "apparent_temperature_min",
+    "apparent_temperature_mean",
+    "shortwave_radiation_sum",
+    "precipitation_sum",
+    "rain_sum",
+    "windspeed_10m_max",
+    "windgusts_10m_max",
+    "winddirection_10m_dominant",
+    "month_sin",
+    "month_cos",
+    "day_sin",
+    "day_cos",
+    "is_southwest_monsoon",
+    "is_northeast_monsoon",
+    "is_inter_monsoon1",
+    "is_inter_monsoon2",
+    "temp_range",
+    "humidity_proxy",
+    "precip_ma3"
+  ],
+  "seq_length": 14,
+  "forecast_days": 5,
+  "city": "Hambantota",
+  "created_at": "2025-08-27T09:26:57.293767"
+}

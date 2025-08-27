@@ -1,0 +1,466 @@
+{
+  "timestamp": "2025-08-27 18:06:36",
+  "metrics": {
+    "MAE": {
+      "formula": "MAE = (1/n) * \u03a3|y_true - y_pred|",
+      "description": "Sum of absolute differences between actual and predicted values, divided by the number of samples",
+      "n": 6135,
+      "sample_calculations": [
+        {
+          "index": 1002,
+          "y_true": 2.0999999046325684,
+          "y_pred": 1.7742784023284912,
+          "absolute_error": 0.32572150230407715
+        },
+        {
+          "index": 2913,
+          "y_true": 26.799999237060547,
+          "y_pred": 27.986312866210938,
+          "absolute_error": 1.1863136291503906
+        },
+        {
+          "index": 1983,
+          "y_true": 17.200000762939453,
+          "y_pred": 19.044153213500977,
+          "absolute_error": 1.8441524505615234
+        },
+        {
+          "index": 501,
+          "y_true": 7.0,
+          "y_pred": 7.177539348602295,
+          "absolute_error": 0.17753934860229492
+        },
+        {
+          "index": 676,
+          "y_true": 47.20000076293945,
+          "y_pred": 49.51995849609375,
+          "absolute_error": 2.319957733154297
+        },
+        {
+          "index": 2603,
+          "y_true": 1.5,
+          "y_pred": 1.0755904912948608,
+          "absolute_error": 0.42440950870513916
+        },
+        {
+          "index": 2944,
+          "y_true": 2.700000047683716,
+          "y_pred": 2.780317783355713,
+          "absolute_error": 0.08031773567199707
+        },
+        {
+          "index": 4808,
+          "y_true": 4.300000190734863,
+          "y_pred": 6.239297866821289,
+          "absolute_error": 1.9392976760864258
+        },
+        {
+          "index": 1786,
+          "y_true": 0.4000000059604645,
+          "y_pred": 2.506938934326172,
+          "absolute_error": 2.1069388389587402
+        },
+        {
+          "index": 2086,
+          "y_true": 0.800000011920929,
+          "y_pred": 0.6808871030807495,
+          "absolute_error": 0.11911290884017944
+        }
+      ],
+      "sum_calculation": {
+        "sum_absolute_errors": 6382.70947265625,
+        "n": 6135,
+        "final_mae": 1.0403764247894287
+      }
+    },
+    "RMSE": {
+      "formula": "RMSE = sqrt((1/n) * \u03a3(y_true - y_pred)\u00b2)",
+      "description": "Square root of the average of squared differences between actual and predicted values",
+      "n": 6135,
+      "sample_calculations": [
+        {
+          "index": 1002,
+          "y_true": 2.0999999046325684,
+          "y_pred": 1.7742784023284912,
+          "error": 0.32572150230407715,
+          "squared_error": 0.10609449446201324
+        },
+        {
+          "index": 2913,
+          "y_true": 26.799999237060547,
+          "y_pred": 27.986312866210938,
+          "error": -1.1863136291503906,
+          "squared_error": 1.4073400497436523
+        },
+        {
+          "index": 1983,
+          "y_true": 17.200000762939453,
+          "y_pred": 19.044153213500977,
+          "error": -1.8441524505615234,
+          "squared_error": 3.4008982181549072
+        },
+        {
+          "index": 501,
+          "y_true": 7.0,
+          "y_pred": 7.177539348602295,
+          "error": -0.17753934860229492,
+          "squared_error": 0.03152022138237953
+        },
+        {
+          "index": 676,
+          "y_true": 47.20000076293945,
+          "y_pred": 49.51995849609375,
+          "error": -2.319957733154297,
+          "squared_error": 5.382204055786133
+        },
+        {
+          "index": 2603,
+          "y_true": 1.5,
+          "y_pred": 1.0755904912948608,
+          "error": 0.42440950870513916,
+          "squared_error": 0.180123433470726
+        },
+        {
+          "index": 2944,
+          "y_true": 2.700000047683716,
+          "y_pred": 2.780317783355713,
+          "error": -0.08031773567199707,
+          "squared_error": 0.006450938526540995
+        },
+        {
+          "index": 4808,
+          "y_true": 4.300000190734863,
+          "y_pred": 6.239297866821289,
+          "error": -1.9392976760864258,
+          "squared_error": 3.7608754634857178
+        },
+        {
+          "index": 1786,
+          "y_true": 0.4000000059604645,
+          "y_pred": 2.506938934326172,
+          "error": -2.1069388389587402,
+          "squared_error": 4.4391913414001465
+        },
+        {
+          "index": 2086,
+          "y_true": 0.800000011920929,
+          "y_pred": 0.6808871030807495,
+          "error": 0.11911290884017944,
+          "squared_error": 0.014187885448336601
+        }
+      ],
+      "sum_calculation": {
+        "sum_squared_errors": 16891.556640625,
+        "n": 6135,
+        "mean_squared_error": 2.753309965133667,
+        "final_rmse": 1.6593101024627686
+      }
+    },
+    "R2": {
+      "formula": "R\u00b2 = 1 - (\u03a3(y_true - y_pred)\u00b2 / \u03a3(y_true - y_mean)\u00b2)",
+      "description": "Proportion of variance in the dependent variable that is predictable from the independent variable",
+      "n": 6135,
+      "sample_calculations": [
+        {
+          "index": 1002,
+          "y_true": 2.0999999046325684,
+          "y_pred": 1.7742784023284912,
+          "y_mean": 8.00438404083252,
+          "squared_error": 0.10609449446201324,
+          "squared_deviation_from_mean": 34.861751556396484
+        },
+        {
+          "index": 2913,
+          "y_true": 26.799999237060547,
+          "y_pred": 27.986312866210938,
+          "y_mean": 8.00438404083252,
+          "squared_error": 1.4073400497436523,
+          "squared_deviation_from_mean": 353.2751770019531
+        },
+        {
+          "index": 1983,
+          "y_true": 17.200000762939453,
+          "y_pred": 19.044153213500977,
+          "y_mean": 8.00438404083252,
+          "squared_error": 3.4008982181549072,
+          "squared_deviation_from_mean": 84.55936431884766
+        },
+        {
+          "index": 501,
+          "y_true": 7.0,
+          "y_pred": 7.177539348602295,
+          "y_mean": 8.00438404083252,
+          "squared_error": 0.03152022138237953,
+          "squared_deviation_from_mean": 1.0087872743606567
+        },
+        {
+          "index": 676,
+          "y_true": 47.20000076293945,
+          "y_pred": 49.51995849609375,
+          "y_mean": 8.00438404083252,
+          "squared_error": 5.382204055786133,
+          "squared_deviation_from_mean": 1536.29638671875
+        },
+        {
+          "index": 2603,
+          "y_true": 1.5,
+          "y_pred": 1.0755904912948608,
+          "y_mean": 8.00438404083252,
+          "squared_error": 0.180123433470726,
+          "squared_deviation_from_mean": 42.307010650634766
+        },
+        {
+          "index": 2944,
+          "y_true": 2.700000047683716,
+          "y_pred": 2.780317783355713,
+          "y_mean": 8.00438404083252,
+          "squared_error": 0.006450938526540995,
+          "squared_deviation_from_mean": 28.136491775512695
+        },
+        {
+          "index": 4808,
+          "y_true": 4.300000190734863,
+          "y_pred": 6.239297866821289,
+          "y_mean": 8.00438404083252,
+          "squared_error": 3.7608754634857178,
+          "squared_deviation_from_mean": 13.72245979309082
+        },
+        {
+          "index": 1786,
+          "y_true": 0.4000000059604645,
+          "y_pred": 2.506938934326172,
+          "y_mean": 8.00438404083252,
+          "squared_error": 4.4391913414001465,
+          "squared_deviation_from_mean": 57.826656341552734
+        },
+        {
+          "index": 2086,
+          "y_true": 0.800000011920929,
+          "y_pred": 0.6808871030807495,
+          "y_mean": 8.00438404083252,
+          "squared_error": 0.014187885448336601,
+          "squared_deviation_from_mean": 51.90314483642578
+        }
+      ],
+      "sum_calculation": {
+        "y_mean": 8.00438404083252,
+        "total_sum_squares": 681321.375,
+        "residual_sum_squares": 16891.556640625,
+        "final_r2": 0.9752076268196106
+      }
+    },
+    "Correlation": {
+      "formula": "corr = \u03a3((x - x_mean)(y - y_mean)) / (\u221a(\u03a3(x - x_mean)\u00b2) * \u221a(\u03a3(y - y_mean)\u00b2))",
+      "description": "Measure of linear correlation between two sets of data",
+      "n": 6135,
+      "sample_calculations": [
+        {
+          "index": 1002,
+          "y_true": 2.0999999046325684,
+          "y_pred": 1.7742784023284912,
+          "y_true_deviation": -5.904384136199951,
+          "y_pred_deviation": -6.792004585266113,
+          "product_of_deviations": 40.102603912353516
+        },
+        {
+          "index": 2913,
+          "y_true": 26.799999237060547,
+          "y_pred": 27.986312866210938,
+          "y_true_deviation": 18.795616149902344,
+          "y_pred_deviation": 19.420028686523438,
+          "product_of_deviations": 365.01141357421875
+        },
+        {
+          "index": 1983,
+          "y_true": 17.200000762939453,
+          "y_pred": 19.044153213500977,
+          "y_true_deviation": 9.195616722106934,
+          "y_pred_deviation": 10.477869987487793,
+          "product_of_deviations": 96.35047912597656
+        },
+        {
+          "index": 501,
+          "y_true": 7.0,
+          "y_pred": 7.177539348602295,
+          "y_true_deviation": -1.0043840408325195,
+          "y_pred_deviation": -1.3887438774108887,
+          "product_of_deviations": 1.3948321342468262
+        },
+        {
+          "index": 676,
+          "y_true": 47.20000076293945,
+          "y_pred": 49.51995849609375,
+          "y_true_deviation": 39.19561767578125,
+          "y_pred_deviation": 40.95367431640625,
+          "product_of_deviations": 1605.20458984375
+        },
+        {
+          "index": 2603,
+          "y_true": 1.5,
+          "y_pred": 1.0755904912948608,
+          "y_true_deviation": -6.5043840408325195,
+          "y_pred_deviation": -7.490692615509033,
+          "product_of_deviations": 48.72233963012695
+        },
+        {
+          "index": 2944,
+          "y_true": 2.700000047683716,
+          "y_pred": 2.780317783355713,
+          "y_true_deviation": -5.304384231567383,
+          "y_pred_deviation": -5.785965442657471,
+          "product_of_deviations": 30.69098472595215
+        },
+        {
+          "index": 4808,
+          "y_true": 4.300000190734863,
+          "y_pred": 6.239297866821289,
+          "y_true_deviation": -3.7043838500976562,
+          "y_pred_deviation": -2.3269853591918945,
+          "product_of_deviations": 8.620046615600586
+        },
+        {
+          "index": 1786,
+          "y_true": 0.4000000059604645,
+          "y_pred": 2.506938934326172,
+          "y_true_deviation": -7.604383945465088,
+          "y_pred_deviation": -6.059344291687012,
+          "product_of_deviations": 46.077579498291016
+        },
+        {
+          "index": 2086,
+          "y_true": 0.800000011920929,
+          "y_pred": 0.6808871030807495,
+          "y_true_deviation": -7.204383850097656,
+          "y_pred_deviation": -7.8853960037231445,
+          "product_of_deviations": 56.809417724609375
+        }
+      ],
+      "sum_calculation": {
+        "x_mean": 8.00438404083252,
+        "y_mean": 8.566283226013184,
+        "numerator": 704417.4375,
+        "denominator_x": 825.4219360351562,
+        "denominator_y": 861.6658325195312,
+        "final_correlation": 0.9904104471206665
+      }
+    },
+    "AccuracyPercentage": {
+      "formula": "Accuracy% = 100 * (1 - (MAE / avg_precipitation))",
+      "description": "Contextualizes MAE relative to average precipitation values",
+      "calculation": {
+        "mae": 1.0403764247894287,
+        "avg_precipitation": 7.9586345381526105,
+        "mae_divided_by_avg": 0.1307229846715927,
+        "complement": 0.8692770004272461,
+        "final_accuracy_percentage": 86.92770385742188
+      }
+    },
+    "ForecastSkill": {
+      "formula": "Forecast Skill% = max(0, R\u00b2) * 100",
+      "description": "R\u00b2 score expressed as a percentage, with negative values clamped to 0",
+      "calculation": {
+        "r2": 0.9752076268196106,
+        "max_r2_and_zero": 0.9752076268196106,
+        "final_forecast_skill": 97.52075958251953
+      }
+    },
+    "PrecisionPercentage": {
+      "formula": "Precision% = 100 * (1 - (RMSE / max_precipitation))",
+      "description": "Contextualizes RMSE in terms of maximum observed precipitation",
+      "calculation": {
+        "rmse": 1.6593101024627686,
+        "max_precipitation": 103.0,
+        "rmse_divided_by_max": 0.016109807416796684,
+        "complement": 0.983890175819397,
+        "final_precision_percentage": 98.3890151977539
+      }
+    },
+    "Bias": {
+      "formula": "Bias = (1/n) * \u03a3(y_pred - y_true)",
+      "description": "Average of differences between predicted and actual values (indicates systematic over/under prediction)",
+      "n": 6135,
+      "sample_calculations": [
+        {
+          "index": 1002,
+          "y_true": 2.0999999046325684,
+          "y_pred": 1.7742784023284912,
+          "error": -0.32572150230407715
+        },
+        {
+          "index": 2913,
+          "y_true": 26.799999237060547,
+          "y_pred": 27.986312866210938,
+          "error": 1.1863136291503906
+        },
+        {
+          "index": 1983,
+          "y_true": 17.200000762939453,
+          "y_pred": 19.044153213500977,
+          "error": 1.8441524505615234
+        },
+        {
+          "index": 501,
+          "y_true": 7.0,
+          "y_pred": 7.177539348602295,
+          "error": 0.17753934860229492
+        },
+        {
+          "index": 676,
+          "y_true": 47.20000076293945,
+          "y_pred": 49.51995849609375,
+          "error": 2.319957733154297
+        },
+        {
+          "index": 2603,
+          "y_true": 1.5,
+          "y_pred": 1.0755904912948608,
+          "error": -0.42440950870513916
+        },
+        {
+          "index": 2944,
+          "y_true": 2.700000047683716,
+          "y_pred": 2.780317783355713,
+          "error": 0.08031773567199707
+        },
+        {
+          "index": 4808,
+          "y_true": 4.300000190734863,
+          "y_pred": 6.239297866821289,
+          "error": 1.9392976760864258
+        },
+        {
+          "index": 1786,
+          "y_true": 0.4000000059604645,
+          "y_pred": 2.506938934326172,
+          "error": 2.1069388389587402
+        },
+        {
+          "index": 2086,
+          "y_true": 0.800000011920929,
+          "y_pred": 0.6808871030807495,
+          "error": -0.11911290884017944
+        }
+      ],
+      "sum_calculation": {
+        "sum_errors": 3447.25,
+        "n": 6135,
+        "final_bias": 0.561898946762085
+      }
+    },
+    "ExtremeEventF1": {
+      "formula": "F1 = 2 * (precision * recall) / (precision + recall)",
+      "description": "Harmonic mean of precision and recall for extreme rainfall event detection (>20mm)",
+      "calculation": {
+        "threshold": 20,
+        "true_extreme_count": 627,
+        "predicted_extreme_count": 644,
+        "true_positives": 613,
+        "false_positives": 31,
+        "false_negatives": 14,
+        "precision": 0.9518633540372671,
+        "recall": 0.9776714513556619,
+        "final_f1": 0.964594807238395
+      }
+    }
+  }
+}
