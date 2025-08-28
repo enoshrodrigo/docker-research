@@ -16,4 +16,4 @@ EXPOSE 8000
 ENV PORT=8000
 
 # Command to run when the container starts
-CMD gunicorn --bind=0.0.0.0:8000 --timeout 600 server:app
+CMD gunicorn --bind=0.0.0.0:8000 --timeout 600 app:app
