@@ -19,7 +19,7 @@ CORS(app)
 # -----------------------
 # Paths and Globals
 # -----------------------
-BASE_DIR = Path(".")
+BASE_DIR = Path("")
 OUTPUTS_DIR = BASE_DIR / "outputs"
 CITIES_DIR = OUTPUTS_DIR / "cities"  # New directory for city models
 
@@ -1370,7 +1370,7 @@ def get_advanced_metrics():
         return jsonify({"error": f"City '{city}' not supported"}), 400
 
     if not cities_test_data[city]["processed"] and not prepare_test_data(city):
-        return jsonify({"error": f"Failed to prepare test data for {city}"}), 500
+        return jsonify({"error": f"Failed ccxcxxc  to prepare test data for {city}"}), 500
 
     try:
         test_predictions = cities_test_data[city]["test_predictions"]

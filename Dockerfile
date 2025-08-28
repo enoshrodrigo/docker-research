@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.12-slim
 
 WORKDIR /app
 
@@ -16,4 +16,4 @@ EXPOSE 8000
 ENV PORT=8000
 
 # Command to run when the container starts
-CMD gunicorn --bind=0.0.0.0:8000 --timeout 600 app:app
+CMD python app.py
