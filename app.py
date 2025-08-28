@@ -1562,6 +1562,53 @@ def get_advanced_metrics():
         print(f"Error calculating advanced metrics for {city}:", e)
         return jsonify({"error": str(e)}), 500
 
+@app.route('/api/list-app-files', methods=['GET'])
+def list_app_files():
+    """
+    List files under a given directory inside the container.
+    Query params:
+      - path: path to list (default: /app)
+      - max_depth: integer depth to recurse (default: 2)
+    """
+    path = request.args.get('path', '/app')
+    try:
+        max_depth = int(request.args.get('max_depth', 2))
+    except Exception:
+        max_depth = 2
+
+    base = Path(path)
+    if not base.exists():
+        return jsonify({"error": f"path does not exist: {path}"}), 400
+
+    entries = []
+    try:
+        for dirpath, dirnames, filenames in os.walk(base):
+            rel = Path(dirpath).relative_to(base)
+            depth = len(rel.parts) if str(rel) != '.' else 0
+            if depth > max_depth:
+                # skip deeper directories
+                continue
+            for d in sorted(dirnames):
+                p = Path(dirpath) / d
+                entries.append({
+                    "path": str(p.relative_to(base)),
+                    "type": "dir"
+                })
+            for f in sorted(filenames):
+                p = Path(dirpath) / f
+                try:
+                    size = p.stat().st_size
+                except Exception:
+                    size = None
+                entries.append({
+                    "path": str(p.relative_to(base)),
+                    "type": "file",
+                    "size": size
+                })
+        return jsonify({"base": str(base), "entries": entries})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 
 if __name__ == '__main__':
     # Create directories if they don't exist
