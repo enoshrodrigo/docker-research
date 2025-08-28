@@ -1,4 +1,4 @@
-# model_train_refactor.py
+# model_train_refactor.py file
 import os
 import json
 import random
@@ -429,3 +429,4 @@ if __name__ == "__main__":
                           test_fraction=0.2,
                           augment_times=3)
     print(json.dumps(results, indent=2))
+
